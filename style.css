@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@300;400;700&display=swap');
+
+
+body {
+    background: linear-gradient(#160D38,#3F249E);
+    margin: 0;
+    padding: 0;
+    font-family: "Instrument Serif", serif;
+    font-weight: 300;
+    max-height: 200vh;
+
+    background-size: cover;
+}
+    
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    justify-content: center; /*vertical center */
+    align-items: center; /* horizontal center */
+    white-space: nowrap; /* prevent wrapping */
+}
+
+a, span {
+    font-size: 80px;
+    font-weight: 400;
+    font-style: italic;
+    display: inline-block;
+    margin: 400px 0;
+    color: #6DF5FF;
+    text-decoration: none; /* remove underline */
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s;
+}
+
+img[src="planet1.png"] {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: -140px;
+    right: 970px;
+
+}
+
+img[src="planet2.png"] {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: -250px;
+    left: 900px;
+}
+
+img[src="planet3.png"] {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: 450px;
+    left: 950px;
+}
+
+img[src="planet4.png"] {
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    right: 800px;
+}
+.hover-linkplanet {
+    transition: transform 0.5s;
+    transition: smooth;
+}
+.hover-linkobplanet:hover img { transform: scale(1.05); }
+.hover-linkpplanet:hover img { transform: scale(1.05); }
+.hover-linkeplanet:hover img { transform: scale(1.05); }
+.hover-linkjplanet:hover img { transform: scale(1.05); }
+
+/* place container where you want the group of stars */
+.hover-linkstar1 {
+    position: absolute;   /* move the whole group by changing these values */
+    top: 50px;           /* adjust to move vertically */
+    left: 570px;          /* adjust to move horizontally */
+    width: 450px;         /* optional: container size */
+    height: 300px;
+    pointer-events: none; /* allow clicks to pass unless specific links inside */
+}
+.hover-linkstar1 p {
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+/* make images positioned relative to the container */
+.hover-linkstar1 img {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s;
+    pointer-events: auto; /* allow hover/click on images */
+}
+.hover-linkstar1:hover p {
+    opacity: 1;
+}
+.hover-linkstar1:hover img { transform: scale(1.5); }
+
+/* place container where you want the group of stars */
+.hover-linkstar2 {
+    position: absolute;   /* move the whole group by changing these values */
+    top: 350px;           /* adjust to move vertically */
+    left: 750px;          /* adjust to move horizontally */
+    width: 450px;         /* optional: container size */
+    height: 300px;
+    pointer-events: none; /* allow clicks to pass unless specific links inside */
+}
+
+.hover-linkstar2 p {
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: relative;
+    top: 0px;
+    left: 200px;
+}
+
+.hover-linkstar2:hover p {
+    opacity: 1;
+}
+
+/* make images positioned relative to the container */
+.hover-linkstar2 img {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s;
+    pointer-events: auto; /* allow hover/click on images */
+}
+
+.hover-linkstar2:hover img { transform: scale(1.5); }
+
+/* place container where you want the group of stars */
+.hover-linkstar3 {
+    position: absolute;   /* move the whole group by changing these values */
+    top: 500px;           /* adjust to move vertically */
+    left: 500px;          /* adjust to move horizontally */
+    width: 300px;         /* optional: container size */
+    height: 300px;
+    pointer-events: none; /* allow clicks to pass unless specific links inside */
+}
+
+.hover-linkstar3 p {
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.hover-linkstar3:hover p {
+    opacity: 1;
+}
+
+/* make images positioned relative to the container */
+.hover-linkstar3 img {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s;
+    pointer-events: auto; /* allow hover/click on images */
+}
+
+.hover-linkstar3:hover img { transform: scale(1.5); }
+
+
+.hover-linkstars:hover img { transform: scale(1.1); }
+
+/* position each star inside the container by offsets (relative to .hover-linkstars) */
+.hover-linkstar1 img[src="star1.png"] { top: 0px;   left: 0px;   } /* top-left inside container */
+.hover-linkstar2 img[src="star2.png"] { top: 10px;  left: 220px; } /* adjust as needed */
+.hover-linkstar3 img[src="star3.png"] { top: 140px; left: 200px; }
+.hover-linkstar4 img[src="star4.png"] { top: 180px; left: 20px;  }
+.hover-linkstar5 img[src="star5.png"] { top: 100px; left: 130px; }
+.hover-linkstar6 img[src="star6.png"] { top: 250px; left: 180px; }
+
+.hover-linkstar4 {
+    position: absolute;   /* move the whole group by changing these values */
+    top: 120px;           /* adjust to move vertically */
+    right: 450px;          /* adjust to move horizontally */
+    width: 450px;         /* optional: container size */
+    height: 300px;
+    pointer-events: none; /* allow clicks to pass unless specific links inside */
+}
+
+.hover-linkstar4 img {
+    position: absolute;
+    width: 25px;
+    height: auto;
+}
+
+.hover-linkstar5 {
+    position: absolute;   /* move the whole group by changing these values */
+    top: 350px;           /* adjust to move vertically */
+    left: 1100px;          /* adjust to move horizontally */
+    width: 450px;         /* optional: container size */
+    height: 300px;
+    pointer-events: none; /* allow clicks to pass unless specific links inside */
+}
+
+.hover-linkstar5 img {
+    position: absolute;
+    width: 25px;
+    height: auto;
+}
+
+.hover-linkstar6 {
+    position: absolute;   /* move the whole group by changing these values */
+    top: 550px;           /* adjust to move vertically */
+    left: 700px;          /* adjust to move horizontally */
+    width: 450px;         /* optional: container size */
+    height: 300px;
+    pointer-events: none; /* allow clicks to pass unless specific links inside */
+}
+
+.hover-linkstar6 img {
+    position: absolute;
+    width: 25px;
+    height: auto;
+}
+p {
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 60%;
+    margin: 0 auto;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+#star1, #star2, #star3, #star4, #star5, #star6 {
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s;
+    animation-name: twinkle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#star1 {animation-delay: 0s; }
+#star2 {animation-delay: 0.6s; }
+#star3 {animation-delay: 1.2s; }
+#star4 {animation-delay: 1.8s; }
+#star5 {animation-delay: 2.4s; }
+#star6 {animation-delay: 3s; }
+
+@keyframes twinkle {
+    0% {
+        scale: 0.5;
+        transform: rotate(15deg);
+    }
+    50% {
+        scale: 1.2;
+        transform: rotate(-15deg);
+    }
+    100% {
+        scale: 0.5;
+        transform: rotate(15deg);
+    }
+}
+
+#star1:hover, #star2:hover, #star3:hover {
+    animation-play-state: paused;
+    transition: none; 
+}

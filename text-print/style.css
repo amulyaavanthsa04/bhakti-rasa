@@ -1,0 +1,104 @@
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.lexend-zetta-variable {
+  font-family: "Lexend Zetta", sans-serif;
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body.switch-mode {
+    /* Layered example (bg1 on top of bg2). If you only want one image, remove the second url. */
+    background-image: url('./assets/background1.jpeg'), url('./assets/background2.jpeg');
+    /* Make each image larger than the viewport — increase the percentage to make them bigger */
+    background-size: 200% 200%, 200% 200%;
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    z-index: -1;
+}
+ h1 {
+    font-size: 3em;
+    text-align: right;
+    margin-right: 50px; 
+    z-index: 10;
+ }
+
+ h2 {
+    font-size: 30px;
+    text-align: right;
+    margin-right: 50px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-weight: 500;
+    z-index: 10;
+}
+
+h3 {
+    font-family: Instrument Serif, serif;
+    font-style: italic;
+    z-index: 10;
+    font-weight: 200;
+    font-size: 8em;
+    margin-left: 50px;
+    letter-spacing: 0.25em;
+}
+
+.dropdown {
+    z-index: -1;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+/* make the <img id="bg"> fill the viewport and crop nicely */
+#bg {
+  position: fixed;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* crop to fill without distortion */
+  object-position: center;
+  z-index: -1;              /* place behind content */
+  pointer-events: none;     /* allow clicks through */
+}
+
+@media print {
+    #settings {
+        display: none;
+    }
+}
+
+.hidden { display: none !important; }
+
+/* ensure one text block is visible by default if needed */
+.text { text-align: left; }
+
+@media (max-width: 760px) {
+    h1 {
+        font-size: 1.5em;
+        margin-right: 20px; 
+    }
+
+    h2 {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    h3 {
+        font-size: 5em;
+        margin-left: 20px;
+    }
+}
+
