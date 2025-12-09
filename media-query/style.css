@@ -1,0 +1,121 @@
+
+body {
+    background: linear-gradient(#160D38,#3F249E);
+    margin: 0;
+    padding: 0;
+    font-family: "Instrument Serif", serif;
+    font-weight: 300;
+    min-height: 100vh;
+    background-size: cover;
+}
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.instrument-serif-regular-italic {
+     font-family: "Instrument Serif", serif;
+     font-weight: 300;
+     font-style: italic;
+}
+
+.lexend-zetta-italic {
+     font-family: "Lexend Zetta", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: italic;
+}
+
+.lexend-zetta {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.dasyarasa {
+    margin-top: 5%;
+}
+
+p {
+    font-size: 60px;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    margin: 10px;
+}
+#info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin: 20px;
+    text-align: right; 
+}
+
+.line{
+    display: flex;
+    align-items: baseline;
+    gap: 8%;
+    margin-left: 10%;
+}
+.step1{
+    margin-left: 20%;
+}
+.step2{
+    margin-left: 40%;
+}
+.step3{
+    margin-left: 60%;
+}
+.step4{
+    margin-left: 32%
+}
+
+.step5{
+    margin-left: 50%;
+}
+
+.english{
+    font-size: 30px;
+    font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+    p {
+        font-size: 40px;
+    }
+    #info {
+        position: absolute;
+        font-size: 25px;
+        bottom: -220px;
+        top: auto;
+    }
+    .line{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-left: 5%;
+    }
+    .english{
+        font-size: 20px;
+        margin-top: 5px;
+        text-align: right;
+        align-self: flex-end
+    }
+    .dasyarasa{
+        padding-bottom:200px;
+    }
+}
+
+.back-arrow {
+    position: fixed;              /* keep arrow fixed on screen */
+    top: 40px;                    /* distance from top */
+    left: 50%;                    /* center horizontally */
+    transform: translateX(-50%);  /* exact horizontal centering */
+    z-index: 1000;
+}

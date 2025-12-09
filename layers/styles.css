@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(#160D38,#3F249E) no-repeat center center fixed;
+    display: block;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.back-arrow {
+    position: fixed;              /* keep arrow fixed on screen */
+    top: 40px;                    /* distance from top */
+    left: 80%;                    /* center horizontally */
+    z-index: 1000;
+    filter: none;               /* ensure arrow is in full color */
+}
+
+h1 {
+   color: #6BF0FF;
+   font-family: 'Instrument Serif', serif;
+   font-size: 30px;
+   margin: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+  padding: 24px;
+}
+
+.container {
+    display: flex;
+    height: 40vh;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container img {
+    width: auto;
+    height: 100%;
+    margin: 10px;
+}
+
+.container iframe {
+    transition: 2s;
+    width: 0;
+    height: auto;
+    flex-basis:0;
+}
+
+.container:hover img {
+    transform: scale(0.9);
+    filter: brightness(50%);
+}
+.container:hover iframe {
+    flex-basis: 50%; 
+    width: 100ch;
+}
+
+/* responsive: stack to single column on narrow screens */
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

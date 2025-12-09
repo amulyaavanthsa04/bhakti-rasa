@@ -1,0 +1,323 @@
+body{
+   background: linear-gradient(#160D38,#3F249E) no-repeat center center fixed;
+   text-align: center;
+
+}
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.back-arrow {
+    position: fixed;              /* keep arrow fixed on screen */
+    top: 40px;                    /* distance from top */
+    left: 80%;                    /* center horizontally */
+    z-index: 1000;
+    filter: none;               /* ensure arrow is in full color */
+}
+ 
+h1 {
+   color: #6BF0FF;
+   font-family: 'Instrument Serif', serif;
+   font-size: 30px;
+   margin: 10px;
+}
+
+#krishnabutter img{
+   display: block;
+   float: left;
+   position: relative;
+   height: auto;
+   width: 500px;
+   margin: 10px;
+}
+
+
+#krishnagopis img {
+  display: block;
+  position: relative;
+   float: right;
+  margin: 150px 10px 10px 10px;
+  width: 500px;
+  height: auto;
+
+}
+
+#krishnacowherd {
+  display: block;
+  text-align: left; /* make inline content align left inside the container */
+}
+
+/* align image to the left and keep it responsive */
+#krishnacowherd img{
+   display: block;
+   float: left;
+   width: clamp(120px, 30vw, 450px);
+   height: auto;
+   margin: 20px 10px 10px 10px; /* adjust top/side spacing as needed */
+   clear: left; /* helps avoid overlap with previous floats */
+}
+
+#krishnagovardhan img{
+   float: right;
+   height: auto;
+   width: 800px;
+   margin: 10px;
+}
+
+#krishnayashoda {
+  width: 100%;
+}
+#krishnayashoda img {
+  display: block;
+   float: right;
+   width: clamp(120px, 30vw, 450px);
+   height: auto;
+   margin: 40px 10px 10px 10px; /* adjust top/side spacing as needed */
+   clear: right; /* helps avoid overlap with previous floats */
+}
+
+#krishnaradha img {
+   display: block;
+   float: left;
+   width: 400px;
+   height: auto;
+   margin: 40px 10px 10px 10px; /* adjust top/side spacing as needed */
+   clear: right; /* helps avoid overlap with previous floats */     
+}
+
+#krishnavasudev img {
+   display: block;
+   margin: 0 auto; /* center the image */
+   width: 400px;
+   height: auto;
+   margin-top: 40px 10px 10px 10px; /* adjust top spacing as needed */
+}
+
+#krishnaarjuna img {
+   display: block;
+   float: left;
+   margin: 0 auto; /* center the image */
+   width: 600px;
+   height: auto;
+   margin-top: 40px 10px 10px 10px; /* adjust top spacing as needed */
+}
+
+#krishnavishwarup img {
+   display: block;
+   float: right;
+   margin: 10px;
+   width: 600px;
+   height: auto;
+   margin-top: 40px 10px 10px 10px; /* adjust top spacing as needed */
+}
+
+#krishnakaliya img {
+   display: block;
+   margin: 10px auto; /* center the image */
+   width: 350px;
+   height: auto;
+   margin-top: 40px 10px 10px 10px; /* adjust top spacing as needed */
+}
+
+.krishnatext {
+  color: #6BF0FF;
+  font-family: 'Instrument Serif', serif;
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+#krishna {
+ position: fixed;
+ top: 300px;                 /* distance from the top of the screen */
+ left: 50%;
+ transform: translateX(-50%); /* center horizontally */
+ width: auto;
+ max-width: 90%;
+ margin: 0;
+ padding: 8px;
+}
+
+#gopala {
+   position: fixed;
+   top: 700px;                 /* distance from the top of the screen */
+   right: 75%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+#makhanchor {
+   position: fixed;
+   top: 100px;                 /* distance from the top of the screen */
+   left: 35%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+#govardhan-dhari {
+   position: fixed;
+   top: 600px;                 /* distance from the top of the screen */
+   right: 10%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+#vasudev {
+   position: fixed;
+   top: 40px;                 /* distance from the top of the screen */
+   right: 5%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+#parthasarthy {
+   position: fixed;
+   top: 100px;                 /* distance from the top of the screen */
+   right: 10%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+#yashoda-nandana {
+   position: fixed;
+   top: 450px;                 /* distance from the top of the screen */
+   left: 40%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+#jagannath {
+   position: fixed;
+   top: 700px;                 /* distance from the top of the screen */
+   right: 10%;
+   transform: translateX(-50%); /* center horizontally */
+   width: auto;
+   max-width: 90%;
+   margin: 0;
+   padding: 8px;
+}
+
+/* container to align bottoms of the two images */
+.image-row {
+  display: flex;
+  align-items: flex-end;   /* align image bottoms */
+  justify-content: space-between;
+  gap: 36rem;
+  width: 100%;
+  margin: 10px;
+  flex-wrap: nowrap;
+}
+
+/* reset floats and make the images responsive when inside .image-row */
+.image-row #krishnayashoda img,
+.image-row #krishnaradha img {
+  float: none;
+  display: block;
+  margin: 0;
+  width: clamp(120px, 30vw, 450px); /* adjust sizes as needed */
+  height: auto;
+}
+
+/* make images positioned and sit above fixed text */
+#krishnagopis img,
+#krishnaarjuna img,
+#krishnavishwarup img,
+#krishnaradha img,
+#krishnacowherd img,
+#krishnagovardhan img,
+#krishnayashoda img,
+#krishnavasudev img,
+#krishnakaliya img,
+#krishnabutter img {
+  position: relative; /* enable z-index */
+  z-index: 1000;      /* images on top */
+}
+
+/* ensure fixed text stays behind images */
+#krishna,
+#govardhan-dhari,
+.krishnatext {
+  z-index: 500;       /* lower than images */
+  /* keep existing position rules */
+}
+
+#makhanchor,
+#gopala,
+#vasudev,
+#jagannath,
+#yashoda-nandana {
+  position: fixed; /* already fixed, kept to be explicit */
+  z-index: 1100;   /* higher than image z-index (1000) */
+}
+
+/* Make all images black & white and animate on hover to full-colour fullscreen.
+   When one image is hovered the others visually shift underneath. */
+img {
+  filter: grayscale(100%) saturate(0);
+  transition: filter 400ms cubic-bezier(.2,.8,.2,1),
+              transform 400ms ease,
+              width 400ms ease,
+              height 400ms ease,
+              opacity 300ms ease;
+  cursor: zoom-in;
+  max-width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+/* Hovered image becomes coloured and fills the viewport */
+img:hover {
+  position: fixed;
+  inset: 0;               /* top:0; right:0; bottom:0; left:0; */
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  margin: 0;
+  z-index: 2000;          /* top layer */
+  filter: none;           /* restore colour */
+  transform: none;
+  cursor: zoom-out;
+}
+
+/* When any image is hovered, move/scale other images so they appear rearranged underneath */
+body:has(img:hover) img:not(:hover) {
+  transform: translateY(85vh) scale(0.75);
+  opacity: 0.95;
+  transition: transform 500ms ease, opacity 300ms ease;
+  z-index: 100;           /* beneath the fullscreen image */
+  pointer-events: none;   /* avoid accidental interactions while one is fullscreen */
+}
+
+/* keep important UI labels above the fullscreen image if you want them visible */
+#makhanchor,
+#gopala,
+#vasudev,
+#jagannath,
+#yashoda-nandana {
+  z-index: 2100;
+}

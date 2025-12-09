@@ -1,0 +1,88 @@
+body{
+    background: radial-gradient(circle, #3F249E, #160D38);
+    color: #3e1eb2;
+    font-size: 20px;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+p {
+    max-width: 2000px;
+    margin: 40px;
+    font-family: 'Instrument Serif', serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+}
+button{
+    position: relative;
+    top: 0px;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border: 1px solid #3F249E;
+    background-color: #160D38;
+    color: #3F249E;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+button:hover{
+    background-color: #3F249E;
+    color: #160D38;
+}
+main{
+    padding: 10px
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center within the container */
+    min-height: 60vh;        /* adjust as needed to control vertical centering */
+}
+#container img{
+    z-index: 10;
+    width: auto;
+    max-height: 624px;
+    height: auto;
+    display: block;
+    margin: 0; /* remove default margins */
+}
+/* hide the open rose by default */
+#container #shakti{
+    display: none;
+}
+
+#container.flipped #shakti{
+    display: block;
+}
+
+#container.flipped #shiva{
+    display: none;
+}
+
+/* alternate background when "flipped" class is on the body */
+body.flipped {
+    background: radial-gradient(circle, #160D38, #3F249E);
+    color:#160D38
+}
+
+.back-arrow {
+    position: fixed;              /* keep arrow fixed on screen */
+    top: 40px;                    /* distance from top */
+    left: 50%;                    /* center horizontally */
+    transform: translateX(-50%);  /* exact horizontal centering */
+    z-index: 1000;
+}
